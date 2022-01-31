@@ -57,11 +57,11 @@ RUN dnf -y update; \
 
 ##TMD## INSTALL DBEAVER - END
 
-##TMD## INSTALL GOLANG AND GH - BEGIN
+##TMD## INSTALL GOLANG - BEGIN
 
 RUN dnf -y update; \
-    dnf -y install golang gh; \
+    dnf -y install golang; \
     dnf clean all; \
     rm -rf /var/cache /var/log/dnf* /var/log/yum.*
 
-##TMD## INSTALL GOLANG AND GH  - END
+##TMD## INSTALL GOLANG - END
